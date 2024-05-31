@@ -26,16 +26,18 @@ html {
 
 a {
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
+
   &.btn {
     text-decoration: none;
   }
 }
 
 .sidebar-items {
-  & > div {
+  &>div {
     border-right: 1px solid #e5e5e5;
     text-align: center;
     min-height: 4rem;
@@ -43,9 +45,153 @@ a {
     display: flex;
   }
 
-  & > div:not(.apps) {
+  &>div:not(.apps) {
     min-width: 4rem;
     align-items: center !important;
     justify-content: center !important;
   }
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jetbrains-mono-regular {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.jetbrains-mono-bold {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: white;
+}
+
+.background-hat {
+  background-color: #feed86;
+}
+
+.font-15 {
+  font-size: 15px,
+}
+
+.font-20 {
+  font-size: 20px,
+}
+
+.font-25 {
+  font-size: 25px,
+}
+
+.font-30 {
+  font-size: 30px,
+}
+
+.height-0 {
+  height: 0px,
+}
+
+.width-50 {
+  width: 50%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td,
+th {
+  border: 3px solid #89470a;
+  text-align: left;
+  padding: 8px;
+}
+
+.table-title {
+  color: #f5ad00;
+  background: black;
+  text-align: end;
+  width: 40%;
+}
+
+.element-tokenomics-desc-l {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.element-tokenomics-desc-r {
+  width: 280px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.element-tokenomics-l {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 370px 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: black;
+  padding-right: 50px;
+  height: 120px;
+}
+
+.element-tokenomics-r {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 370px 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: black;
+  padding-left: 50px;
+  height: 120px;
+}
+
+.bg-black {
+  background: black;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.auctions-description-container {
+  display: flex;
+  justify-content: center;
+}
+
+.auctions-description {
+  width: 70%;
+  text-align: justify !important;
 }

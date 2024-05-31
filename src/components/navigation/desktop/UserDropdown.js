@@ -138,62 +138,6 @@ export function UserDropdown(props) {
           style={{ minWidth: "fit-content" }}
         >
           <li>
-            <NavLink
-              className="dropdown-item"
-              type="button"
-              to={`/${props.widgets.profilePage}?accountId=${account.accountId}`}
-            >
-              <User />
-              My Profile
-            </NavLink>
-          </li>
-          <li>
-            <button
-              className="dropdown-item"
-              type="button"
-              onClick={() => withdrawStorage()}
-            >
-              <Withdraw />
-              Withdraw {props.availableStorage.div(1000).toFixed(2)}kb
-            </button>
-          </li>
-          {account.pretendAccountId ? (
-            <li key="pretend">
-              <button
-                className="dropdown-item"
-                type="button"
-                disabled={!account.startPretending}
-                onClick={() => account.startPretending(undefined)}
-              >
-                <StopPretending />
-                Stop pretending
-              </button>
-            </li>
-          ) : (
-            <>
-              <li key="stop-pretend">
-                <button
-                  className="dropdown-item"
-                  type="button"
-                  onClick={() => setShowPretendModal(true)}
-                >
-                  <Pretend />
-                  Pretend to be another account
-                </button>
-              </li>
-              <li>
-                <button
-                  className="dropdown-item"
-                  type="button"
-                  onClick={() => setShowMobileQR(true)}
-                >
-                  <QR />
-                  Mobile Sign-in QR
-                </button>
-              </li>
-            </>
-          )}
-          <li>
             <button
               className="dropdown-item"
               type="button"

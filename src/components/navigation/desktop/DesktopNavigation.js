@@ -75,24 +75,15 @@ export function DesktopNavigation(props) {
           <Logotype />
         </Link>
         <div className="navigation-section">
-          <NavigationButton route="/">Home</NavigationButton>
-          <NavigationButton route="/edit">Editor</NavigationButton>
-          <NavigationButton href={props.documentationHref}>
-            Docs
-            <ArrowUpRight />
-          </NavigationButton>
+          
         </div>
         <div className="user-section">
           <StarButton {...props} />
-          <DevActionsDropdown {...props} />
           {!props.signedIn && (
             <SignInButton onSignIn={() => props.requestSignIn()} />
           )}
           {props.signedIn && (
             <>
-              <NotificationWidget
-                notificationButtonSrc={props.widgets.notificationButton}
-              />
               <UserDropdown {...props} />
             </>
           )}

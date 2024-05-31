@@ -14,12 +14,5 @@ export function NavigationWrapper(props) {
       .matchMedia("(min-width: 992px)")
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
-  return hideMenu ? (
-    <></>
-  ) : (
-    <>
-      {matches && <DesktopNavigation {...props} />}
-      {!matches && <MobileNavigation {...props} />}
-    </>
-  );
+  return <DesktopNavigation {...props}/>
 }
