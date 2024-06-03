@@ -92,6 +92,16 @@ export default function ViewPage(props) {
               </div>
             </div>
           </div>
+          <div className="col-12" style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "30px",
+              color: "black",
+              marginTop: "17px"
+            }}>
+              <label className="press-start-2p-regular text-center">Under Construction</label>
+            </div>
         </div>
       </div>
     </div>
