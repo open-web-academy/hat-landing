@@ -49,37 +49,20 @@ export default function ViewPage(props) {
 
   return showMenu ? (
     <div className="container-xl">
-      <div className="row background-hat" style={{height:"100vh"}}>
-      <div className="col-12">
-        </div>
+      <div className="row background-hat" style={{ height: "100vh" }}>
         <div className="col-12">
-          <div className="row" style={{ marginTop: "20px" }}>
-            <div className="col-12" style={{
-              backgroundImage: "url(assets/back-title.png)",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              height: "250px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "70px",
-              color: "black"
-            }}>
-              <label className="press-start-2p-regular text-center">HAT<br />COIN</label>
+          <div className="row">
+            <div className="col-12 section1">
+              <label className="press-start-2p-regular text-center section1-text">HAT<br />COIN</label>
             </div>
-            <div className="col-6" style={{
-              backgroundImage: "url(assets/logo-hat.png)",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "right",
-              height: "250px"
-            }}></div>
+            <div className="col-6 section2"></div>
             <div className="col-6" style={{
               display: "flex",
               color: "black",
             }}>
               <div className="row">
-                <div className="col-12 height-0">
-                  <label className="press-start-2p-regular text-left font-30">For<br />buidlers</label>
+                <div className="col-12 section3-container">
+                  <label className="press-start-2p-regular text-left section3-text">For<br />buidlers</label>
                 </div>
                 <div className="col-12">
                   <label style={{
@@ -93,15 +76,15 @@ export default function ViewPage(props) {
             </div>
           </div>
           <div className="col-12" style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "30px",
-              color: "black",
-              marginTop: "17px"
-            }}>
-              <label className="press-start-2p-regular text-center">Under Construction</label>
-            </div>
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "30px",
+            color: "black",
+            marginTop: "17px"
+          }}>
+            <label className="press-start-2p-regular text-center">Under Construction</label>
+          </div>
         </div>
       </div>
     </div>

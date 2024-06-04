@@ -65,19 +65,14 @@ export function DesktopNavigation(props) {
   return (
     <StyledNavigation>
       <div className="container">
-        <Link
-          to="/"
-          className="logo-link"
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        >
-          <Logotype />
-        </Link>
+        <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+          <img src="assets/icon.png" style={{height:"50px"}}/>
+          <label className="press-start-2p-regular text-white hat-title">HAT</label>
+        </div>
         <div className="navigation-section">
           
         </div>
-        <div className="user-section">
+        {/* <div className="user-section" style={{width:"120px"}}>
           <StarButton {...props} />
           {!props.signedIn && (
             <SignInButton onSignIn={() => props.requestSignIn()} />
@@ -87,7 +82,7 @@ export function DesktopNavigation(props) {
               <UserDropdown {...props} />
             </>
           )}
-        </div>
+        </div> */}
       </div>
     </StyledNavigation>
   );
