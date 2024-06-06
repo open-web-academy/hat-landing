@@ -72,7 +72,7 @@ export function DesktopNavigation(props) {
         <div className="navigation-section">
           
         </div>
-        {/* <div className="user-section" style={{width:"120px"}}>
+        <div className="user-section" style={{width:"120px"}}>
           <StarButton {...props} />
           {!props.signedIn && (
             <SignInButton onSignIn={() => props.requestSignIn()} />
@@ -82,7 +82,7 @@ export function DesktopNavigation(props) {
               <UserDropdown {...props} />
             </>
           )}
-        </div> */}
+        </div>
       </div>
     </StyledNavigation>
   );

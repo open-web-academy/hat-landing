@@ -119,7 +119,6 @@ a {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 50%;
 }
 
 td,
@@ -135,6 +134,18 @@ th {
   text-align: end;
   width: 40%;
 }
+
+.table2 {
+  width: 60%;
+}
+
+.table-title2 {
+  color: #f5ad00;
+  background: black;
+  text-align: end;
+  width: 25%;
+}
+
 
 .element-tokenomics-desc-l {
   width: 280px;
@@ -223,21 +234,116 @@ th {
   font-size: 30px;
 }
 
-.hat-title{
-  margin-left: 10px; 
+.hat-title {
+  margin-left: 10px;
   font-size: 25px;
 }
 
+.utility-section {
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  font-size: 55px;
+  color: black;
+}
+
+.utility-body {
+  background-image: url("../public/assets/back-subtitle.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.utility-text {
+  font-size: 13px;
+}
+
+.specification-section {
+  background-image: url("../public/assets/back-text2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  color: black;
+}
+
+.max-supply-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  color: black;
+  margin-top: 20px;
+  font-size: 55px;
+}
+
+.max-supply-text {
+  background-image: url("../public/assets/back-subtitle2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: black;
+}
+
+.table-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tokenomics-title {
+  background-image: url("../public/assets/back-text2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  color: black;
+}
+
+.tokenomics-element {
+  margin-bottom: 20px;
+}
+
+.auctions-container {
+  background-image: url("../public/assets/back-text2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  color: black;
+}
+
+.login-button {
+  background-color: #F5AD00 !important;
+  color: black !important;
+}
+
 @media only screen and (max-width: 700px) {
-  .col-6 {
+
+  .col-6,
+  .col-5 {
     width: 100%;
   }
 
-  .hat-title{
+  .hat-title {
     font-size: 15px;
   }
 
-  .section1{
+  .section1 {
     background-size: 100%;
     height: 150px;
   }
@@ -250,7 +356,7 @@ th {
     padding: 15px;
   }
 
-  .section2{
+  .section2 {
     background-size: 70%;
     background-position: center;
     height: 180px;
@@ -264,4 +370,86 @@ th {
     font-size: 15px;
   }
 
+  .utility-section-img {
+    height: 120px;
+  }
+
+  .utility-section {
+    font-size: 35px;
+  }
+
+  .utility-body {
+    font-size: 35px;
+  }
+
+  .utility-body {
+    background-size: 100%;
+  }
+
+  .utility-text {
+    font-size: 9px;
+  }
+
+  .specification-section {
+    font-size: 25px;
+  }
+
+  .specification-text {
+    font-size: 9px;
+  }
+
+  .specification-img {
+    width: 90px;
+  }
+
+  .max-supply-container-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .max-supply-img {
+    width: 250px;
+  }
+
+  .max-supply-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .max-supply-text {
+    background-size: 100%;
+    font-size: 20px;
+    height: 100px;
+  }
+
+  .tokenomics-title {
+    font-size: 25px;
+    background-size: 100%;
+  }
+
+  .tokenomics-element {
+    margin-bottom: 20px;
+  }
+
+  .auctions-container {
+    background-size: 100%;
+    font-size: 20px;
+  }
+
+  .auctions-description {
+    width: 100%;
+  }
+
+  .user-section {
+    margin: 0 !important;
+  }
+
+  .table2 {
+    width: 100%;
+  }
 }
