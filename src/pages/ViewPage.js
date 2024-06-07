@@ -142,6 +142,67 @@ export default function ViewPage(props) {
               <label className="press-start-2p-regular text-center">$HAT Max supply</label>
             </div>
           </div>
+          <div className="row" style={{ marginTop: "20px" }}>
+            <div className="col-12 mb-20 tokenomics-title">
+              <label className="press-start-2p-regular text-center text-white">Tokenomics</label>
+            </div>
+            <div className="col-6 element-tokenomics-l tokenomics-element" style={{ backgroundImage: "url(assets/auction.png)" }}>
+              <label className="text-center"><span className="press-start-2p-regular font-15">78% Auction</span><br /><span className="jetbrains-mono-regular font-15 element-tokenomics-desc-l">Auctioned every 24<br />hours until</span></label>
+            </div>
+            <div className="col-6 element-tokenomics-r tokenomics-element" style={{ backgroundImage: "url(assets/treasury.png)" }}>
+              <label className="text-center"><span className="press-start-2p-regular font-15">10% OWA Treasury</span><br /><span className="jetbrains-mono-regular font-15 element-tokenomics-desc-r">Treasury of Open Web Academy<br />for future stuffs </span></label>
+            </div>
+            <div className="col-6 element-tokenomics-l tokenomics-element" style={{ backgroundImage: "url(assets/pool.png)" }}>
+              <label className="text-center"><span className="press-start-2p-regular font-15">4% Liquidity pool</span><br /><span className="jetbrains-mono-regular font-15 element-tokenomics-desc-l">Liquidity pool -<br />@finance_ref</span></label>
+            </div>
+            <div className="col-6 element-tokenomics-r tokenomics-element" style={{ backgroundImage: "url(assets/owateam.png)" }}>
+              <label className="text-center"><span className="press-start-2p-regular font-15">5% OWA TEAM</span><br /><span className="jetbrains-mono-regular font-15 element-tokenomics-desc-r">For buying excavators,<br />quantum computers and sodas -<br />24 months linear release</span></label>
+            </div>
+            <div className="col-6 element-tokenomics-l tokenomics-element" style={{ backgroundImage: "url(assets/contributors.png)" }}>
+              <label className="text-center"><span className="press-start-2p-regular font-15">1% contributors</span><br /><span className="jetbrains-mono-regular font-15 element-tokenomics-desc-l">Early contributors and allies - 12 months linear release - Up to 15 contributors</span></label>
+            </div>
+            <div className="col-6 element-tokenomics-r tokenomics-element" style={{ backgroundImage: "url(assets/airdrop.png)" }}>
+              <label className="text-center"><span className="press-start-2p-regular font-15">1% Airdrop</span><br /><span className="jetbrains-mono-regular font-15 element-tokenomics-desc-r">For Open Web Academy Buidlers<br />community</span></label>
+            </div>
+            <div className="col-6 element-tokenomics-l tokenomics-element" style={{ backgroundImage: "url(assets/fairlaunch.png)" }}>
+              <label className="text-center"><span className="press-start-2p-regular font-15">1% Fair launch</span><br /><span className="jetbrains-mono-regular font-15 element-tokenomics-desc-l">Fair Launch - On @veaxfinance</span></label>
+            </div>
+          </div>
+          <div className="row" style={{ marginTop: "20px",  marginBottom: "70px" }}>
+            <div className="col-12 auctions-container">
+              <label className="press-start-2p-regular text-center text-white">$HAT Auctions</label>
+            </div>
+            <div className="col-12 table-container">
+              <table className="table2">
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">Duration</td>
+                  <td className="press-start-2p-regular">1000 days, auctions every 24 hours
+                  </td>
+                </tr>
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">Currency</td>
+                  <td className="press-start-2p-regular">Accepting $NEAR tokens</td>
+                </tr>
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">Prize</td>
+                  <td className="press-start-2p-regular">Highest bid wins the $HAT</td>
+                </tr>
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">Extension</td>
+                  <td className="press-start-2p-regular">Last bid adds 10 minutes if under 10 minutes remain</td>
+                </tr>
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">Starting Bid</td>
+                  <td className="press-start-2p-regular">1 NEAR</td>
+                </tr>
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">Minimum Increase</td>
+                  <td className="press-start-2p-regular">0.1 NEAR</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
