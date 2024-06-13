@@ -77,7 +77,8 @@ export default function ViewPage(props) {
           </div>
           <div className="row" style={{ marginBottom: "100px" }}>
             <div className="col-12">
-              <Widget key={src} src={src} props={widgetProps} />
+              <Widget key={src} src={src} props={widgetProps} /><br/>
+              <Widget key={src} src="yairnava.testnet/widget/winners" props={widgetProps} />
             </div>
           </div>
           <div className="row" style={{ marginTop: "20px" }}>
