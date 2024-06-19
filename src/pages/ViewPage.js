@@ -194,11 +194,11 @@ export default function ViewPage(props) {
                 </tr>
                 <tr>
                   <td className="table-title2 press-start-2p-regular">Starting Bid</td>
-                  <td className="press-start-2p-regular">1 NEAR</td>
+                  <td className="press-start-2p-regular">2 NEAR</td>
                 </tr>
                 <tr>
                   <td className="table-title2 press-start-2p-regular">Minimum Increase</td>
-                  <td className="press-start-2p-regular">0.1 NEAR</td>
+                  <td className="press-start-2p-regular">0.5 NEAR</td>
                 </tr>
               </table>
             </div>
