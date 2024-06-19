@@ -129,7 +129,7 @@ export function UserDropdown(props) {
                 <Widget src={props.widgets.profileName} />
               </div>
             )}
-            <div className="profile-username">{account.accountId}</div>
+            <div className="profile-username">{account.accountId.split(".")[0]}</div>
           </div>
         </button>
         <ul

@@ -5,6 +5,7 @@
 ## Description
 
 The following repository contains the code needed to run the HAT Token landing page as well as the main auctions component.
+
 ## Setup & Development
 
 Initialize repo:

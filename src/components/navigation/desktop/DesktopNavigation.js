@@ -73,7 +73,6 @@ export function DesktopNavigation(props) {
           
         </div>
         {/* <div className="user-section" style={{width:"120px"}}>
-          <StarButton {...props} />
           {!props.signedIn && (
             <SignInButton onSignIn={() => props.requestSignIn()} />
           )}
