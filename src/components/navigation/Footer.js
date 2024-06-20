@@ -21,22 +21,22 @@ export function Footer() {
                     <div className="row">
                         <div className="col-3 footerLinkColElement">
                             <a href={`https://twitter.com/openwebacademy_`} target="_blank" className="footerLink">
-                                <i className="bi bi-twitter-x mx-1"></i>Follow
+                                Follow
                             </a>
                         </div>
                         <div className="col-3 footerLinkColElement">
                             <a href={`https://t.me/openwebacademy1`} target="_blank" className="footerLink">
-                                <i className="bi bi-telegram mx-1"></i>Telegram
+                                Telegram
                             </a>
                         </div>
                         <div className="col-3 footerLinkColElement">
                             <a href={`https://github.com/open-web-academy`} target="_blank" className="footerLink">
-                                <i className="bi bi-github mx-1"></i> Docs
+                                Docs
                             </a>
                         </div>
                         <div className="col-3 footerLinkColElement">
                             <a href={`https://ipfs.near.social/ipfs/bafkreibq5gdwkuigrfymib2qzk5g4xjze2wxjdowikjfpmg2cibod6ahsy`} target="_blank" className="footerLink">
-                                <i class="bi bi-file-text-fill"></i> Tokenomics
+                                Tokenomics
                             </a>
                         </div>
                     </div>

@@ -114,7 +114,7 @@ export default function ViewPage(props) {
               </div>
             </div>
           </div>
-          {/* <div className="row" style={{ marginTop: "20px" }}>
+          <div className="row" style={{ marginTop: "20px" }}>
             <div className="col-5 text-right">
               <img className="utility-section-img" src="assets/hat.png"></img>
             </div>
@@ -241,7 +241,7 @@ export default function ViewPage(props) {
                 </tr>
               </table>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
