@@ -61,18 +61,57 @@ const StyledNavigation = styled.div`
   }
 `;
 
+const Button = styled.button`
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 10px;
+    max-width: 230px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: 500;
+    border: 0px;
+    color: white;
+    width: 120px;
+    margin-right: 10px;
+
+    &:hover{
+      background: #89470A;
+      color: white;
+    }
+`;
+
 export function DesktopNavigation(props) {
   return (
     <StyledNavigation>
       <div className="container">
-        <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-          <img src="assets/icon.png" style={{height:"50px"}}/>
-          <label className="press-start-2p-regular text-white hat-title">HAT</label>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <img src="assets/icon.png" style={{ height: "50px" }} />
+          {/* <label className="press-start-2p-regular text-white hat-title">HAT</label> */}
         </div>
         <div className="navigation-section">
-          
+
         </div>
-        {/* <div className="user-section" style={{width:"120px"}}>
+        <div className="user-section" style={{ width: "120px" }}>
+        <a href={`https://twitter.com/openwebacademy_`} target="_blank">
+          <Button>
+            <i className="bi bi-twitter-x mx-1"></i> Follow
+          </Button>
+        </a>
+        <a href={`https://t.me/openwebacademy1`} target="_blank">
+          <Button>
+            <i className="bi bi-telegram mx-1"></i> Telegram
+          </Button>
+        </a>
+        <a href={`https://github.com/open-web-academy`} target="_blank">
+          <Button>
+            <i className="bi bi-github mx-1"></i> Docs
+          </Button>
+        </a>
+        </div>
+        <div className="user-section" style={{ width: "120px" }}>
           {!props.signedIn && (
             <SignInButton onSignIn={() => props.requestSignIn()} />
           )}
@@ -81,7 +120,7 @@ export function DesktopNavigation(props) {
               <UserDropdown {...props} />
             </>
           )}
-        </div> */}
+        </div>
       </div>
     </StyledNavigation>
   );

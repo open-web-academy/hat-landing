@@ -44,7 +44,7 @@ const StyledMenu = styled.div`
     overflow-x: auto;
 
     .nav-sign-in-btn {
-      width: fit-content;
+      width: 70px;
     }
 
     .profile-link {
@@ -154,6 +154,22 @@ const StyledMenu = styled.div`
   }
 `;
 
+const Button = styled.button`
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 230px;
+    padding: 10px;
+    font-weight: 500;
+    border: 0px;
+    color: white;
+    width: 120px;
+    margin-right: 10px;
+    background-color: none;
+`;
+
 export function Menu(props) {
   const near = useNear();
   const withdrawStorage = useCallback(async () => {
@@ -193,67 +209,27 @@ export function Menu(props) {
         )}
         <ul className="top-links">
           <li>
-            <NavigationButton route="/">
-              <Home />
-              Home
+            <NavigationButton href="https://twitter.com/openwebacademy_">
+              <i className="bi bi-twitter-x mx-1"></i>
+              Follow
             </NavigationButton>
           </li>
           <li>
-            <NavigationButton
-              disabled={!props.signedIn}
-              route={`/${props.widgets.profilePage}?accountId=${props.signedAccountId}`}
-            >
-              <UserCircle />
-              Profile
+            <NavigationButton href="https://t.me/openwebacademy1">
+              <i className="bi bi-telegram mx-1"></i>
+              Telegram
             </NavigationButton>
           </li>
           <li>
-            <NavigationButton route="/edit">
-              <Code />
-              Editor
-            </NavigationButton>
-          </li>
-          <li>
-            <NavigationButton href={props.documentationHref}>
-              <Book />
-              Documentation
+            <NavigationButton href="https://github.com/open-web-academy">
+              <i className="bi bi-github mx-1"></i>
+              Docs
             </NavigationButton>
           </li>
         </ul>
         <ul className="bottom-links">
-          {props.widgetSrc?.edit && (
-            <li>
-              <Link to={`/edit/${props.widgetSrc?.edit}`}>
-                <Fork />
-                {props.widgetSrc.edit.startsWith(
-                  `${props.signedAccountId}/widget/`
-                )
-                  ? "Edit widget"
-                  : "Fork widget"}
-              </Link>
-            </li>
-          )}
-          {props.widgetSrc?.view && (
-            <li>
-              <Link
-                to={`/${props.widgets.viewSource}?src=${props.widgetSrc?.view}`}
-              >
-                <Code />
-                View source
-              </Link>
-            </li>
-          )}
           {props.signedIn && (
             <>
-              <li>
-                <button
-                  className="log-out-button"
-                  onClick={() => withdrawStorage()}
-                >
-                  <Withdraw />
-                  Withdraw {props.availableStorage.div(1000).toFixed(2)}kb
-                </button>
-              </li>
               <li>
                 <button
                   onClick={() => props.logOut()}
@@ -266,9 +242,6 @@ export function Menu(props) {
             </>
           )}
         </ul>
-        <button className="close-button" onClick={props.onCloseMenu}>
-          <Close />
-        </button>
       </div>
       <div className="right-side" onClick={props.onCloseMenu} />
     </StyledMenu>

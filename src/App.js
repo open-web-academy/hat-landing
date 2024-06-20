@@ -19,6 +19,7 @@ import { setupNeth } from "@near-wallet-selector/neth";
 import { setupNightly } from "@near-wallet-selector/nightly";
 import { setupModal } from "@near-wallet-selector/modal-ui";
 import EmbedPage from "./pages/EmbedPage";
+import { Footer } from "./components/navigation/Footer";
 import {
   useAccount,
   useInitNear,
@@ -217,6 +218,7 @@ function App(props) {
             <Route path={"/:widgetSrc*"}>
               <NavigationWrapper {...passProps} />
               <ViewPage {...passProps} />
+              <Footer/>
             </Route>
           </Switch>
         </Router>
