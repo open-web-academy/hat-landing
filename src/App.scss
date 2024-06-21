@@ -328,9 +328,30 @@ th {
 }
 
 .login-button {
-  background-color: #F5AD00 !important;
-  color: black !important;
+  background-color: #89470A !important;
+  color: white !important;
 }
+
+.footerLink{
+  color: white !important;
+  margin-right: 35px;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+
+.footerOWA{
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+.learnText{
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
 
 @media only screen and (max-width: 700px) {
 
@@ -451,5 +472,35 @@ th {
 
   .table2 {
     width: 100%;
+  }
+
+  .footerLinkColElement{
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+  }
+
+  .footerLinkCol4{
+    width: 45%;
+  }
+
+
+  .footerLinkCol8{
+    width: 55%;
+  }
+
+  .winnersSection{
+    margin-bottom: 0px !important;
+  }
+
+  .bidNowSection{
+    height: 70% !important;
+  }
+
+  .bidNowSectionImg{
+    height: 30px !important;
+    transform: rotate(90deg);
   }
 }

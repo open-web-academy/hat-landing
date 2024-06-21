@@ -35,7 +35,10 @@ export function MobileMenuButton(props) {
         <div />
         <div />
       </div>
-      {props.currentPage}
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <img src="assets/icon.png" style={{ height: "40px" }} />
+        {/* <label className="press-start-2p-regular text-white hat-title">HAT</label> */}
+      </div>
     </StyledMobileMenuButton>
   );
 }

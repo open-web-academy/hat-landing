@@ -49,25 +49,11 @@ export function Navigation(props) {
         onClick={props.onClickShowMenu}
         currentPage={props.currentPage}
       />
-      <Link
-        to="/"
-        className="logo-link"
-        onClick={() => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }}
-      >
-        <NearSocialLogo />
-      </Link>
-      {props.signedIn ? (
-        <div className="d-flex">
-          <StarButton {...props} />
-          <NotificationWidget
-            notificationButtonSrc={props.widgets.notificationButton}
-          />
-        </div>
-      ) : (
-        <SignInButton onSignIn={() => props.requestSignIn()} />
-      )}
+      <div className="user-section">
+        {!props.signedIn && (
+          <SignInButton onSignIn={() => props.requestSignIn()} />
+        )}
+      </div>
     </StyledNavigation>
   );
 }
