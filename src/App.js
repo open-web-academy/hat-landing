@@ -218,6 +218,7 @@ function App(props) {
             <Route path={"/:widgetSrc*"}>
               <NavigationWrapper {...passProps} />
               <ViewPage {...passProps} />
+              <Footer/>
             </Route>
           </Switch>
         </Router>

@@ -94,7 +94,7 @@ export function DesktopNavigation(props) {
         <div className="navigation-section">
 
         </div>
-        <div className="user-section" style={{ width: "120px" }}>
+        <div className="user-section">
         <a href={`https://twitter.com/openwebacademy_`} target="_blank">
           <Button>
             <i className="bi bi-twitter-x mx-1"></i> Follow
