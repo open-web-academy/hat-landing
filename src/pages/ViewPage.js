@@ -95,7 +95,7 @@ export default function ViewPage(props) {
             <div className="col-6">
               <div className="row">
                 <div className="col-12">
-                  <Widget key={src} src="yairnava.testnet/widget/Auctions" props={widgetProps} /><br />
+                  <Widget key={src} src="owa-is-bos.near/widget/HAT-Auctions" props={widgetProps} /><br />
                 </div>
                 <div className="col-12" style={{ textAlign: "center", marginTop: "30px" }}>
                   <label className="press-start-2p-regular text-center learnText" onClick={scrollToAuctionsSection}>Learn about auctions</label>
@@ -107,7 +107,7 @@ export default function ViewPage(props) {
             <div className="col-12">
               <div className="row">
                 <div className="col-6">
-                  <Widget key={src} src="yairnava.testnet/widget/winners" props={widgetProps} />
+                  <Widget key={src} src="owa-is-bos.near/widget/HAT-Auctions-Winners" props={widgetProps} />
                 </div>
                 <div className="col-6" style={{ textAlign: "center" }}>
                   <img src="assets/buldoser-pixel.png" style={{ height: "100%" }} />
@@ -235,13 +235,16 @@ export default function ViewPage(props) {
                 </tr>
                 <tr>
                   <td className="table-title2 press-start-2p-regular">Starting Bid</td>
-                  <td className="press-start-2p-regular">2 NEAR</td>
+                  <td className="press-start-2p-regular">1 NEAR</td>
                 </tr>
                 <tr>
                   <td className="table-title2 press-start-2p-regular">Minimum Increase</td>
                   <td className="press-start-2p-regular">0.5 NEAR</td>
                 </tr>
               </table>
+            </div>
+            <div className="col-12 text-center" style={{ marginTop: "10px"}}>
+              <span className="press-start-2p-regular text-center">🔴 Disclaimer: Auction code is not audited</span>
             </div>
           </div>
           <div className="row" style={{ marginTop: "100px", marginBottom: "20px"}}>
