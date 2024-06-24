@@ -210,6 +210,7 @@ export default function ViewPage(props) {
             </div>
             <div />
           </div>
+          <div ref={auctionsSection}/>
           <div className="row" style={{ marginTop: "100px"}}>
             <div className="col-12 auctions-container">
               <label className="press-start-2p-regular text-center text-white">$HAT Auctions</label>
