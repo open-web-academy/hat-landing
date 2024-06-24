@@ -268,7 +268,7 @@ export default function ViewPage(props) {
               </div>
               <div className="col-6 text-center partnets-logos">
                 <img src="assets/SrPuuulMp.png" style={{ height: "230px" }} />
-                <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Sr Puuul Mp</span>
+                <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Sr Puuul</span>
               </div>
             </div>
           </div>
