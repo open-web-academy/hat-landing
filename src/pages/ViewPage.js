@@ -210,8 +210,8 @@ export default function ViewPage(props) {
             </div>
             <div />
           </div>
-          <div ref={auctionsSection}/>
-          <div className="row" style={{ marginTop: "100px"}}>
+          <div ref={auctionsSection} />
+          <div className="row" style={{ marginTop: "100px" }}>
             <div className="col-12 auctions-container">
               <label className="press-start-2p-regular text-center text-white">$HAT Auctions</label>
             </div>
@@ -244,31 +244,45 @@ export default function ViewPage(props) {
                 </tr>
               </table>
             </div>
-            <div className="col-12 text-center" style={{ marginTop: "10px"}}>
+            <div className="col-12 text-center" style={{ marginTop: "10px" }}>
               <span className="press-start-2p-regular text-center">🔴 Disclaimer: Auction code is not audited</span>
             </div>
           </div>
-          <div className="row" style={{ marginTop: "100px", marginBottom: "20px"}}>
+          <div className="row" style={{ marginTop: "100px", marginBottom: "20px" }}>
             <div className="col-12 partners-section">
               <label className="press-start-2p-regular text-center text-white">Cool people <br /> aping🦍 with us
               </label>
             </div>
-            <div className="row" style={{ marginTop: "30px"}}>
+            <div className="row" style={{ marginTop: "30px" }}>
               <div className="col-6 text-center partnets-logos">
-                <img src="assets/MeteorWallet.png" style={{ height: "230px" }} />
+                <a href="https://x.com/MeteorWallet" target="_blank">
+                  <img src="assets/MeteorWallet.png" style={{ height: "230px" }} />
+                </a>
                 <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Meteor Wallet</span>
               </div>
               <div className="col-6 text-center partnets-logos">
-                <img src="assets/nearweek.png" style={{ height: "230px" }} />
+                <a href="https://x.com/NEARWEEK" target="_blank">
+                  <img src="assets/nearweek.png" style={{ height: "230px" }} />
+                </a>
                 <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Near Week</span>
               </div>
               <div className="col-6 text-center partnets-logos">
-                <img src="assets/Shitzu.png" style={{ height: "230px" }} />
+                <a href="https://x.com/shitzucoin" target="_blank">
+                  <img src="assets/Shitzu.png" style={{ height: "230px" }} />
+                </a>
                 <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Shitzu</span>
               </div>
               <div className="col-6 text-center partnets-logos">
-                <img src="assets/SrPuuulMp.png" style={{ height: "230px" }} />
-                <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Sr Puuul</span>
+                <a href="https://x.com/srpuuul" target="_blank">
+                  <img src="assets/SrPuuulMp.png" style={{ height: "230px" }} />
+                </a>
+                <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Sr. Puuul</span>
+              </div>
+              <div className="col-6 text-center partnets-logos">
+                <a href="https://x.com/mexiweb3" target="_blank">
+                  <img src="assets/Mexi.png" style={{ height: "230px" }} />
+                </a>
+                <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>MexiWeb3</span>
               </div>
             </div>
           </div>
