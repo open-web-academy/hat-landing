@@ -284,6 +284,22 @@ export default function ViewPage(props) {
                 </a>
                 <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>MexiWeb3</span>
               </div>
+
+              <div className="col-6 text-center partnets-logos">
+                <a href="https://x.com/finance_ref" target="_blank">
+                  <img src="assets/RefFinance.png" style={{ height: "230px" }} />
+                </a>
+                <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Ref Finance</span>
+              </div>
+
+              <div className="col-6 text-center partnets-logos">
+                <a href="https://x.com/Nearkok2024" target="_blank">
+                  <img src="assets/NEARKOK.png" style={{ height: "230px" }} />
+                </a>
+                <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Nearkok</span>
+              </div>
+
+
             </div>
           </div>
         </div>
