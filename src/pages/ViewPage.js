@@ -299,6 +299,12 @@ export default function ViewPage(props) {
                 <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Nearkok</span>
               </div>
 
+              <div className="col-6 text-center partnets-logos">
+                <a href="https://x.com/DeltaBotTeam" target="_blank">
+                  <img src="assets/DeltaTrade.png" style={{ height: "230px" }} />
+                </a>
+                <span className="press-start-2p-regular" style={{ marginTop: "20px" }}>Delta Trade</span>
+              </div>
 
             </div>
           </div>
