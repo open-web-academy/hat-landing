@@ -70,7 +70,7 @@ export default function DiamondVault(props) {
                   <div className="row">
                     <div className="col-12 bidNowSection" style={{ height: "0%" }}>
                       <label style={{
-                        backgroundImage: "url(assets/back-text.png)",
+                        backgroundImage: "url(./assets/back-text.png)",
                         backgroundRepeat: "no-repeat",
                         display: "flex",
                         justifyContent: "start",
