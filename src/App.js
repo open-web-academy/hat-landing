@@ -9,6 +9,7 @@ import "App.scss";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import EditorPage from "./pages/EditorPage";
 import ViewPage from "./pages/ViewPage";
+import DiamondVault from "./pages/DiamondVault";
 import { setupWalletSelector } from "@near-wallet-selector/core";
 import { setupMyNearWallet } from "@near-wallet-selector/my-near-wallet";
 import { setupSender } from "@near-wallet-selector/sender";
@@ -215,7 +216,12 @@ function App(props) {
       <EthersProviderContext.Provider value={ethersProviderContext}>
         <Router basename={process.env.PUBLIC_URL}>
           <Switch>
-            <Route path={"/:widgetSrc*"}>
+          <Route path={"/DiamondVault"}>
+              <NavigationWrapper {...passProps} />
+              <DiamondVault {...passProps} />
+              <Footer/>
+            </Route>
+            <Route path={"/"}>
               <NavigationWrapper {...passProps} />
               <ViewPage {...passProps} />
               <Footer/>
