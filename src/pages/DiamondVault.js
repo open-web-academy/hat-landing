@@ -85,7 +85,7 @@ export default function DiamondVault(props) {
                         alignItems: "center",
                         paddingLeft: "30px"
                       }} className="jetbrains-mono-regular text-left text-white font-20">Send Hat's Now
-                        <img className="bidNowSectionImg" src="assets/arrow-pixel.png" style={{ height: "60px" }} />
+                        <img className="bidNowSectionImg" src="../assets/arrow-pixel.png" style={{ height: "60px" }} />
                       </label>
                     </div>
                   </div>
