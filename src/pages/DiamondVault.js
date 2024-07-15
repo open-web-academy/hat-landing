@@ -110,7 +110,7 @@ export default function DiamondVault(props) {
                   <Widget key={src} src="yairnava.testnet/widget/Winners-Diamond-Vault" props={widgetProps} />
                 </div>
                 <div className="col-6" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                  <img src="assets/diamond-vault-open.png" style={{ height: "70%" }} />
+                  <img src="../assets/diamond-vault-open.png" style={{ height: "70%" }} />
                 </div>
               </div>
             </div>
