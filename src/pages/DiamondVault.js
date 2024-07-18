@@ -71,7 +71,7 @@ export default function DiamondVault(props) {
             </div>
             <div className="col-6">
               <div class="row" style={{height: "100%", display: "flex", justifyContent: "center", alignItems: "end"}}>
-              <div style={{ textAlign: "center", fontSize: "20px", background: "black", width: "50%", color: "white" }}>
+              <div style={{ textAlign: "center", fontSize: "20px", background: "black", width: "50%", color: "white", borderRadius: "10px 10px 0 0" }}>
                 <label className="press-start-2p-regular ">
                   {today}
                 </label>
