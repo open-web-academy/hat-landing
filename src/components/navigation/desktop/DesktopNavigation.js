@@ -83,6 +83,23 @@ const Button = styled.button`
     }
 `;
 
+const ButtonCircle = styled.button`
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: 500;
+    border: 0px;
+    color: white;
+    margin-right: 10px;
+
+    &:hover{
+      background: #89470A;
+      color: white;
+    }
+`;
 export function DesktopNavigation(props) {
   return (
     <StyledNavigation>
@@ -92,26 +109,35 @@ export function DesktopNavigation(props) {
           {/* <label className="press-start-2p-regular text-white hat-title">HAT</label> */}
         </div>
         <div className="navigation-section">
-
+        <a href={`/`}>
+          <Button style={{width: "150px", background: "#89470A", color: "white"}}>
+            Auctions
+          </Button>
+        </a>
+        <a href={`DiamondVault`}>
+          <Button style={{width: "150px", background: "#89470A", color: "white"}}>
+            Diamond Vault
+          </Button>
+        </a>
         </div>
         <div className="user-section">
         <a href={`https://twitter.com/openwebacademy_`} target="_blank">
-          <Button>
-            <i className="bi bi-twitter-x mx-1"></i> Follow
-          </Button>
+          <ButtonCircle>
+            <i className="bi bi-twitter-x mx-1"></i>
+          </ButtonCircle>
         </a>
         <a href={`https://t.me/openwebacademy1`} target="_blank">
-          <Button>
-            <i className="bi bi-telegram mx-1"></i> Telegram
-          </Button>
+          <ButtonCircle>
+            <i className="bi bi-telegram mx-1"></i>
+          </ButtonCircle>
         </a>
         <a href={`https://github.com/open-web-academy`} target="_blank">
-          <Button>
-            <i className="bi bi-github mx-1"></i> Docs
-          </Button>
+          <ButtonCircle>
+            <i className="bi bi-github mx-1"></i>
+          </ButtonCircle>
         </a>
         </div>
-        <div className="user-section" style={{ width: "120px" }}>
+        <div className="user-section" style={{ width: "120px", margin: "0" }}>
           {!props.signedIn && (
             <SignInButton onSignIn={() => props.requestSignIn()} />
           )}

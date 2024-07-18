@@ -49,3 +49,27 @@ export function NavigationButton(props) {
     </StyledNavigationButton>
   );
 }
+
+export function NavigationOptionButton(props) {
+  return (
+    <StyledNavigationButton className={props.disabled ? "disabled" : ""}>
+      {props.route ? (
+        <NavLink
+          onClick={(e) => {
+            if (props.disabled) {
+              e.preventDefault();
+            }
+          }}
+          to={props.route}
+          exact={true}
+        >
+          {props.children}
+        </NavLink>
+      ) : (
+        <a href={props.href} rel="noopener noreferrer">
+          {props.children}
+        </a>
+      )}
+    </StyledNavigationButton>
+  );
+}

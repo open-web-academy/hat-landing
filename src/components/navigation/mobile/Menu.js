@@ -8,7 +8,7 @@ import { LogOut } from "../../icons/LogOut";
 import { Fork } from "../../icons/Fork";
 import { UserCircle } from "../../icons/UserCircle";
 import { Widget, useNear } from "near-social-vm";
-import { NavigationButton } from "../NavigationButton";
+import { NavigationButton, NavigationOptionButton } from "../NavigationButton";
 import { SignInButton } from "../SignInButton";
 import { Link } from "react-router-dom";
 import { Withdraw } from "../../icons/Withdraw";
@@ -207,6 +207,18 @@ export function Menu(props) {
             }}
           />
         )}
+        <ul className="top-links">
+          <li>
+            <NavigationOptionButton href="/">
+              Auctions
+            </NavigationOptionButton>
+          </li>
+          <li>
+            <NavigationOptionButton href="DiamondVault">
+              Diamond Vault
+            </NavigationOptionButton>
+          </li>
+        </ul>
         <ul className="top-links">
           <li>
             <NavigationButton href="https://twitter.com/openwebacademy_">
