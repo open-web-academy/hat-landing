@@ -135,7 +135,8 @@ export default function DiamondVault(props) {
                   <b>Deposits in the vault</b><br />
                   <ul>
                     <li>You can add any amount of $HAT tokens to the vault, from 10,000 to infinity.</li>
-                    <li>The counter time is reset according to the amount deposited:</li>
+                    <li>The counter time is reset according to the amount deposited.</li>
+                    <li>If there are 5 minutes or less left on the timer and between 10,000 and 500,000 $HAT are deposited, the timer will reset to 5 minutes.</li>
                   </ul>
                 </span>
               </div>
