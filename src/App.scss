@@ -370,6 +370,10 @@ th {
   margin-top: 30px;
 }
 
+.disclaimerVault{
+  width: 70%; 
+}
+
 
 @media only screen and (max-width: 700px) {
 
@@ -525,5 +529,17 @@ th {
   .bidNowSectionImg{
     height: 30px !important;
     transform: rotate(90deg);
+  }
+
+  .backgroundVaultSections{
+    border-radius: 10px !important;
+  }
+
+  .learnAboutSection{
+    margin-top: 120px !important;
+  }
+
+  .disclaimerVault{
+    width: 100%;
   }
 }

@@ -70,88 +70,127 @@ export default function DiamondVault(props) {
               </div>
             </div>
             <div className="col-6">
-              <div class="row" style={{height: "100%", display: "flex", justifyContent: "center", alignItems: "end"}}>
-              <div style={{ textAlign: "center", fontSize: "20px", background: "black", width: "50%", color: "white", borderRadius: "10px 10px 0 0" }}>
-                <label className="press-start-2p-regular ">
-                  {today}
-                </label>
-              </div>
-            </div>
-          </div>
-          <div className="col-6" style={{ background: "black", borderRadius: "10px 0 0 10px" }}>
-            <div className="row">
-              <div className="col-12">
-                <Widget key={src} src="yairnava.testnet/widget/Diamond-Vault-Supply" props={widgetProps} /><br />
-              </div>
-            </div>
-          </div>
-          <div className="col-6" style={{ background: "black", borderRadius: "0 10px 10px 0" }}>
-            <div className="row">
-              <div className="col-12">
-                <Widget key={src} src="yairnava.testnet/widget/Diamond-Vault" props={widgetProps} /><br />
-              </div>
-              <div className="col-12" style={{ textAlign: "center", marginTop: "30px", color: "white" }}>
-                <label className="press-start-2p-regular text-center learnText" onClick={scrollToAuctionsSection}>Learn about diamond vault</label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row winnersSection" style={{ marginTop: "100px", marginBottom: "100px" }}>
-          <div className="col-12">
-            <div className="row">
-              <div className="col-12">
-                <div className="row">
-                  <div className="col-12 section1">
-                    <label className="press-start-2p-regular text-center section1-text">Vault<br />List</label>
-                  </div>
+              <div class="row" style={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
+                <div style={{ textAlign: "center", fontSize: "20px", background: "black", width: "50%", color: "white", borderRadius: "10px 10px 0 0" }}>
+                  <label className="press-start-2p-regular ">
+                    {today}
+                  </label>
                 </div>
               </div>
-              <div className="col-12">
-                <Widget key={src} src="yairnava.testnet/widget/Winners-Diamond-Vault" props={widgetProps} />
+            </div>
+            <div className="col-6 backgroundVaultSections" style={{ background: "black", borderRadius: "10px 0 0 10px" }}>
+              <div className="row">
+                <div className="col-12">
+                  <Widget key={src} src="yairnava.testnet/widget/Diamond-Vault-Supply" props={widgetProps} /><br />
+                </div>
+              </div>
+            </div>
+            <div className="col-6 backgroundVaultSections" style={{ background: "black", borderRadius: "0 10px 10px 0" }}>
+              <div className="row">
+                <div className="col-12">
+                  <Widget key={src} src="yairnava.testnet/widget/Diamond-Vault" props={widgetProps} /><br />
+                </div>
+                <div className="col-12 learnAboutSection" style={{ textAlign: "center", marginTop: "30px", marginBottom: "30px", color: "white" }}>
+                  <label className="press-start-2p-regular text-center learnText" onClick={scrollToAuctionsSection}>Learn about diamond vault</label>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div ref={auctionsSection} />
-        <div className="row" style={{ marginTop: "100px", marginBottom: "50px" }}>
-          <div className="col-12 auctions-container">
-            <label className="press-start-2p-regular text-center text-white">Vault Process</label>
+          <div className="row winnersSection" style={{ marginTop: "100px", marginBottom: "100px" }}>
+            <div className="col-12">
+              <div className="row">
+                <div className="col-12">
+                  <div className="row">
+                    <div className="col-12 section1">
+                      <label className="press-start-2p-regular text-center section1-text">Vault<br />List</label>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12">
+                  <Widget key={src} src="yairnava.testnet/widget/Winners-Diamond-Vault" props={widgetProps} />
+                </div>
+              </div>
+            </div>
+            <div ref={auctionsSection} />
           </div>
-          <div className="col-12 table-container">
-            <table className="table2">
-              <tr>
-                <td className="table-title2 press-start-2p-regular">Duration</td>
-                <td className="press-start-2p-regular">1000 days, auctions every 24 hours
-                </td>
-              </tr>
-              <tr>
-                <td className="table-title2 press-start-2p-regular">Currency</td>
-                <td className="press-start-2p-regular">Accepting $NEAR tokens</td>
-              </tr>
-              <tr>
-                <td className="table-title2 press-start-2p-regular">Prize</td>
-                <td className="press-start-2p-regular">Highest bid wins 19,266,000 $HAT</td>
-              </tr>
-              <tr>
-                <td className="table-title2 press-start-2p-regular">Extension</td>
-                <td className="press-start-2p-regular">Last bid adds 10 minutes if under 10 minutes remain</td>
-              </tr>
-              <tr>
-                <td className="table-title2 press-start-2p-regular">Starting Bid</td>
-                <td className="press-start-2p-regular">1 NEAR</td>
-              </tr>
-              <tr>
-                <td className="table-title2 press-start-2p-regular">Minimum Increase</td>
-                <td className="press-start-2p-regular">0.5 NEAR</td>
-              </tr>
-            </table>
-          </div>
-          <div className="col-12 text-center" style={{ marginTop: "10px" }}>
-            <span className="press-start-2p-regular text-center">🔴 Disclaimer: Diamond Vault code is not audited</span>
+          <div className="row" style={{ marginTop: "100px", marginBottom: "50px" }}>
+            <div className="col-12 auctions-container">
+              <label className="press-start-2p-regular text-center text-white">Vault Process</label>
+            </div>
+            <div className="col-12" style={{ marginTop: "25px", display: "flex", justifyContent: "center" }}>
+              <div className="disclaimerVault">
+                <span className="press-start-2p-regular" style={{ textAlign: "justify" }}>
+                  <b>Starts of the vault</b><br />
+                  <ul>
+                    <li>The vault starts with a minimum initial deposit of 100,000 $HAT.</li>
+                    <li>At start, the vault has a timer of 2 days (48 hours).</li>
+                    <li>In case of a deposit of more than 100,000 $HAT, please refer to the following section.</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+            <div className="col-12" style={{ marginTop: "25px", display: "flex", justifyContent: "center" }}>
+              <div className="disclaimerVault">
+                <span className="press-start-2p-regular" style={{ textAlign: "justify" }}>
+                  <b>Deposits in the vault</b><br />
+                  <ul>
+                    <li>You can add any amount of $HAT tokens to the vault, from 10,000 to infinity.</li>
+                    <li>The counter time is reset according to the amount deposited:</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+            <div className="col-12 table-container">
+              <table className="table2">
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">$HAT's Deposit Amount</td>
+                  <td className="table-title2 press-start-2p-regular">Count Down Period</td>
+                </tr>
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">Less than 500,000</td>
+                  <td className="press-start-2p-regular">Without changes</td>
+                </tr>
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">500,001 - 1,000,000</td>
+                  <td className="press-start-2p-regular">1 Day</td>
+                </tr>
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">1,000,000 - 5,000,000</td>
+                  <td className="press-start-2p-regular">12 Hours</td>
+                </tr>
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">5,000,000 - 19,999,000</td>
+                  <td className="press-start-2p-regular">1 Hour</td>
+                </tr>
+                <tr>
+                  <td className="table-title2 press-start-2p-regular">20,000,000 or more</td>
+                  <td className="press-start-2p-regular">15 Minutes</td>
+                </tr>
+              </table>
+            </div>
+            <div className="col-12" style={{ marginTop: "25px", display: "flex", justifyContent: "center" }}>
+              <div className="disclaimerVault">
+                <span className="press-start-2p-regular" style={{ textAlign: "justify" }}>
+                  <b>Completion of the game</b><br />
+                  When the counter reaches zero, the last contributor must wait 7 days to claim the contents of the trunk.
+                </span>
+              </div>
+            </div>
+            <div className="col-12" style={{ marginTop: "25px", display: "flex", justifyContent: "center" }}>
+              <div className="disclaimerVault">
+                <span className="press-start-2p-regular" style={{ textAlign: "justify" }}>
+                  <b>*Disclaimer*</b><br />
+                  <ul>
+                    <li>Diamond Vault code is not audited.</li>
+                    <li>1% of each deposit is sent to the OWA treasury.</li>
+                    <li>Upon depositing $HAT's into the vault, the funds cease to be the property of the contributor and become the property of the vault.</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div >
   );
 }
