@@ -147,7 +147,7 @@ export default function DiamondVault(props) {
                   <td className="table-title2 press-start-2p-regular">Count Down Period</td>
                 </tr>
                 <tr>
-                  <td className="table-title2 press-start-2p-regular">Less than 500,000</td>
+                  <td className="table-title2 press-start-2p-regular">500,000 or less</td>
                   <td className="press-start-2p-regular">Without changes</td>
                 </tr>
                 <tr>
@@ -155,11 +155,11 @@ export default function DiamondVault(props) {
                   <td className="press-start-2p-regular">1 Day</td>
                 </tr>
                 <tr>
-                  <td className="table-title2 press-start-2p-regular">1,000,000 - 5,000,000</td>
+                  <td className="table-title2 press-start-2p-regular">1,000,001 - 5,000,000</td>
                   <td className="press-start-2p-regular">12 Hours</td>
                 </tr>
                 <tr>
-                  <td className="table-title2 press-start-2p-regular">5,000,000 - 19,999,000</td>
+                  <td className="table-title2 press-start-2p-regular">5,000,001 - 19,999,000</td>
                   <td className="press-start-2p-regular">1 Hour</td>
                 </tr>
                 <tr>
