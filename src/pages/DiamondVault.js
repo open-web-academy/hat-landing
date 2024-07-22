@@ -120,6 +120,17 @@ export default function DiamondVault(props) {
             <div className="col-12" style={{ marginTop: "25px", display: "flex", justifyContent: "center" }}>
               <div className="disclaimerVault">
                 <span className="press-start-2p-regular" style={{ textAlign: "justify" }}>
+                  <b>Completion of the game</b><br />
+                  <ul>
+                    <li>When the counter reaches zero, the last contributor must wait 7 days to claim the contents of the trunk.</li>
+                    <li>Last contributor take it’s ALL!</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+            <div className="col-12" style={{ marginTop: "25px", display: "flex", justifyContent: "center" }}>
+              <div className="disclaimerVault">
+                <span className="press-start-2p-regular" style={{ textAlign: "justify" }}>
                   <b>Starts of the vault</b><br />
                   <ul>
                     <li>The vault starts with a minimum initial deposit of 100,000 $HAT.</li>
@@ -160,7 +171,7 @@ export default function DiamondVault(props) {
                   <td className="press-start-2p-regular">12 Hours</td>
                 </tr>
                 <tr>
-                  <td className="table-title2 press-start-2p-regular">5,000,001 - 19,999,999</td>
+                  <td className="table-title2 press-start-2p-regular">5,000,001 - 19,999,000</td>
                   <td className="press-start-2p-regular">1 Hour</td>
                 </tr>
                 <tr>
@@ -168,14 +179,6 @@ export default function DiamondVault(props) {
                   <td className="press-start-2p-regular">15 Minutes</td>
                 </tr>
               </table>
-            </div>
-            <div className="col-12" style={{ marginTop: "25px", display: "flex", justifyContent: "center" }}>
-              <div className="disclaimerVault">
-                <span className="press-start-2p-regular" style={{ textAlign: "justify" }}>
-                  <b>Completion of the game</b><br />
-                  When the counter reaches zero, the last contributor must wait 7 days to claim the contents of the trunk.
-                </span>
-              </div>
             </div>
             <div className="col-12" style={{ marginTop: "25px", display: "flex", justifyContent: "center" }}>
               <div className="disclaimerVault">
