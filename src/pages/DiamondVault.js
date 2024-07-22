@@ -61,59 +61,7 @@ export default function DiamondVault(props) {
     <div className="container-xl">
       <div className="row background-hat">
         <div className="col-12">
-          <div className="row">
-            <div className="col-6">
-              <div className="row">
-                <div className="col-12 section1">
-                  <label className="press-start-2p-regular text-center section1-text">Diamond<br />Vault</label>
-                </div>
-              </div>
-            </div>
-            <div className="col-6">
-              <div class="row" style={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
-                <div style={{ textAlign: "center", fontSize: "20px", background: "black", width: "50%", color: "white", borderRadius: "10px 10px 0 0" }}>
-                  <label className="press-start-2p-regular ">
-                    {today}
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div className="col-6 backgroundVaultSections" style={{ background: "black", borderRadius: "10px 0 0 10px" }}>
-              <div className="row">
-                <div className="col-12">
-                  <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault-CurrentSupply" props={widgetProps} /><br />
-                </div>
-              </div>
-            </div>
-            <div className="col-6 backgroundVaultSections" style={{ background: "black", borderRadius: "0 10px 10px 0" }}>
-              <div className="row">
-                <div className="col-12">
-                  <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault" props={widgetProps} /><br />
-                </div>
-                <div className="col-12 learnAboutSection" style={{ textAlign: "center", marginTop: "30px", marginBottom: "30px", color: "white" }}>
-                  <label className="press-start-2p-regular text-center learnText" onClick={scrollToAuctionsSection}>Learn about diamond vault</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row winnersSection" style={{ marginTop: "100px", marginBottom: "100px" }}>
-            <div className="col-12">
-              <div className="row">
-                <div className="col-12">
-                  <div className="row">
-                    <div className="col-12 section1">
-                      <label className="press-start-2p-regular text-center section1-text">Vault<br />List</label>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12">
-                  <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault-Winners" props={widgetProps} />
-                </div>
-              </div>
-            </div>
-            <div ref={auctionsSection} />
-          </div>
-          <div className="row" style={{ marginTop: "100px", marginBottom: "50px" }}>
+        <div className="row" style={{ marginTop: "100px", marginBottom: "50px" }}>
             <div className="col-12 auctions-container">
               <label className="press-start-2p-regular text-center text-white">Vault Process</label>
             </div>
@@ -160,7 +108,7 @@ export default function DiamondVault(props) {
                   <td className="press-start-2p-regular">12 Hours</td>
                 </tr>
                 <tr>
-                  <td className="table-title2 press-start-2p-regular">5,000,001 - 19,999,999</td>
+                  <td className="table-title2 press-start-2p-regular">5,000,001 - 19,999,000</td>
                   <td className="press-start-2p-regular">1 Hour</td>
                 </tr>
                 <tr>
@@ -187,6 +135,57 @@ export default function DiamondVault(props) {
                     <li>Upon depositing $HAT's into the vault, the funds cease to be the property of the contributor and become the property of the vault.</li>
                   </ul>
                 </span>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-6">
+              <div className="row">
+                <div className="col-12 section1">
+                  <label className="press-start-2p-regular text-center section1-text">Diamond<br />Vault</label>
+                </div>
+              </div>
+            </div>
+            <div className="col-6">
+              <div class="row" style={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
+                <div style={{ textAlign: "center", fontSize: "20px", background: "black", width: "50%", color: "white", borderRadius: "10px 10px 0 0" }}>
+                  <label className="press-start-2p-regular ">
+                    {today}
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 backgroundVaultSections" style={{ background: "black", borderRadius: "10px 0 0 10px" }}>
+              <div className="row">
+                <div className="col-12">
+                  <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault-CurrentSupply" props={widgetProps} /><br />
+                </div>
+              </div>
+            </div>
+            <div className="col-6 backgroundVaultSections" style={{ background: "black", borderRadius: "0 10px 10px 0" }}>
+              <div className="row">
+                <div className="col-12">
+                  <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault" props={widgetProps} /><br />
+                </div>
+                <div className="col-12 learnAboutSection" style={{ textAlign: "center", marginTop: "30px", marginBottom: "30px", color: "white" }}>
+                  <label className="press-start-2p-regular text-center">Last contributor take it’s ALL!</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row winnersSection" style={{ marginTop: "100px", marginBottom: "100px" }}>
+            <div className="col-12">
+              <div className="row">
+                <div className="col-12">
+                  <div className="row">
+                    <div className="col-12 section1">
+                      <label className="press-start-2p-regular text-center section1-text">Vault<br />List</label>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12">
+                  <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault-Winners" props={widgetProps} />
+                </div>
               </div>
             </div>
           </div>
