@@ -83,6 +83,9 @@ export default function DiamondVault(props) {
                 <div className="col-12">
                   <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault-CurrentSupply" props={widgetProps} /><br />
                 </div>
+                <div className="col-12 learnAboutSection" style={{ textAlign: "center", marginTop: "60px", marginBottom: "30px", color: "white" }}>
+                  <label className="press-start-2p-regular text-center learnText" onClick={scrollToAuctionsSection}>Learn about diamond vault</label>
+                </div>
               </div>
             </div>
             <div className="col-6 backgroundVaultSections" style={{ background: "black", borderRadius: "0 10px 10px 0" }}>
@@ -90,8 +93,8 @@ export default function DiamondVault(props) {
                 <div className="col-12">
                   <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault" props={widgetProps} /><br />
                 </div>
-                <div className="col-12 learnAboutSection" style={{ textAlign: "center", marginTop: "30px", marginBottom: "30px", color: "white" }}>
-                  <label className="press-start-2p-regular text-center learnText" onClick={scrollToAuctionsSection}>Learn about diamond vault</label>
+                <div className="col-12 learnAboutSection" style={{ textAlign: "center", marginTop: "10px", marginBottom: "30px", color: "white" }}>
+                  <label className="press-start-2p-regular text-center">Last contributor take it’s ALL!</label>
                 </div>
               </div>
             </div>
@@ -123,7 +126,6 @@ export default function DiamondVault(props) {
                   <b>Completion of the game</b><br />
                   <ul>
                     <li>When the counter reaches zero, the last contributor must wait 7 days to claim the contents of the trunk.</li>
-                    <li>Last contributor take it’s ALL!</li>
                   </ul>
                 </span>
               </div>
