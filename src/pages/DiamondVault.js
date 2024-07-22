@@ -160,7 +160,7 @@ export default function DiamondVault(props) {
                   <td className="press-start-2p-regular">12 Hours</td>
                 </tr>
                 <tr>
-                  <td className="table-title2 press-start-2p-regular">5,000,001 - 19,999,000</td>
+                  <td className="table-title2 press-start-2p-regular">5,000,001 - 19,999,999</td>
                   <td className="press-start-2p-regular">1 Hour</td>
                 </tr>
                 <tr>
