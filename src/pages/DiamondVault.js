@@ -81,14 +81,14 @@ export default function DiamondVault(props) {
             <div className="col-6 backgroundVaultSections" style={{ background: "black", borderRadius: "10px 0 0 10px" }}>
               <div className="row">
                 <div className="col-12">
-                  <Widget key={src} src="yairnava.testnet/widget/Diamond-Vault-Supply" props={widgetProps} /><br />
+                  <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault-CurrentSupply" props={widgetProps} /><br />
                 </div>
               </div>
             </div>
             <div className="col-6 backgroundVaultSections" style={{ background: "black", borderRadius: "0 10px 10px 0" }}>
               <div className="row">
                 <div className="col-12">
-                  <Widget key={src} src="yairnava.testnet/widget/Diamond-Vault" props={widgetProps} /><br />
+                  <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault" props={widgetProps} /><br />
                 </div>
                 <div className="col-12 learnAboutSection" style={{ textAlign: "center", marginTop: "30px", marginBottom: "30px", color: "white" }}>
                   <label className="press-start-2p-regular text-center learnText" onClick={scrollToAuctionsSection}>Learn about diamond vault</label>
@@ -107,7 +107,7 @@ export default function DiamondVault(props) {
                   </div>
                 </div>
                 <div className="col-12">
-                  <Widget key={src} src="yairnava.testnet/widget/Winners-Diamond-Vault" props={widgetProps} />
+                  <Widget key={src} src="owa-is-bos.near/widget/HAT-DiamondVault-Winners" props={widgetProps} />
                 </div>
               </div>
             </div>
